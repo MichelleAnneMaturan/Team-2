@@ -478,9 +478,9 @@ ul li a:hover{
 
             <div class="menu">
                 <ul>
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="<?=base_url('Welcome/Home')?>">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="<?=base_url('Welcome/Services')?>">SERVICE</a></li>
                     <li><a href="#">CONTACT</a></li>
                     <li><a href="<?=base_url('Welcome/Front')?>">Logout</a></li>
                 </ul>

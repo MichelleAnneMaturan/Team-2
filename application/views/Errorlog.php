@@ -433,7 +433,7 @@ input {
 }
 
 .logo{
-    color: #ff7200;
+    color: #FFC300  ;
     font-size: 35px;
     font-family: Arial;
     padding-left: 20px;
@@ -471,7 +471,7 @@ ul li a{
 }
 
 ul li a:hover{
-    color: #ff7200;
+    color: #FFC300 ;
 }
 
 .search{
@@ -485,7 +485,7 @@ ul li a:hover{
     width: 200px;
     height: 40px;
     background: transparent;
-    border: 1px solid #ff7200;
+    border: 1px solid  #FFC300  ;
     margin-top: 13px;
     color: #fff;
     border-right: none;
@@ -498,9 +498,9 @@ ul li a:hover{
 
 .btn{
     width: 110px;
-    height: 40px;
-    background: #ff7200;
-    border: 2px solid #ff7200;
+    height: 50px;
+    background: #FFC300  ;
+    border: 2px solid  #FFC300  ;
     margin-top: 13px;
     color: #fff;
     font-size: 15px;
@@ -548,7 +548,7 @@ ul li a:hover{
 .content .cn{
     width: 160px;
     height: 40px;
-    background: #ff7200;
+    background:   #FFC300  ;
     border: none;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -570,9 +570,60 @@ ul li a:hover{
 }
 
 .content span{
-    color: #ff7200;
+    color:  #FFC300  ;
     font-size: 65px
 }
+
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background : #fff;
+    width: 100%;
+    height: 100%;
+}
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid #ff5733;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+.loader:before{
+  animation-delay: .5s;
+}
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
    </style>
 </head>
 <body>
@@ -584,6 +635,10 @@ ul li a:hover{
         </div>
         <div class="twp-video-layer"></div>
     </div>
+
+    <div class="loader_bg">
+    <div class="loader"></div>
+    </div> 
   
     <div class="main">
         <div class="navbar">
@@ -594,8 +649,8 @@ ul li a:hover{
             <div class="menu">
                 <ul>
                     <li><a href="<?=base_url('Welcome/Front')?>">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="<?=base_url('Welcome/About')?>">ABOUT</a></li>
+                    <li><a href="<?=base_url('Welcome/Login')?>">SERVICE</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
@@ -606,50 +661,12 @@ ul li a:hover{
             </div>
 
         </div> 
+
+
     <div class="cont">
-    <form method="post" autocomplete="off" action="<?=base_url('Welcome/loginnow')?>" action="/action_page.php" style="background-image:url('https://live.staticflickr.com/8448/8009034240_5c197a3e62_b.jpg');padding:5px;width:1349px;height:600px; solid black;">
-        <div class="form sign-in">
-            <h2>Welcome</h2>
-            <label>
-                <span>Email</span>
-                <input type="email"  name="email"  placeholder="enter your email" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp" required/>
-            </label>
-            <label>
-                <span>Password</span>
-                <input type="password" name="password" placeholder="enter your password" class="form-control" id="exampleInputPassword1" required/>
-            </label>
-            <div>
-            <center>
-            <button type="submit" class="btn btn-default">Sign In</button>
-            <p style="color: white;"> THE EMAIL OR PASSWORD ARE INCORRECT! </P>
-           </center>
-           </div>
-            <?php
-            if($this->session->flashdata('error')) { ?> 
-            <center>
-            <p class="text-danger text-center" style="margin-top: 5px; color: white; "><?=$this->session->flashdata('error')?></p>
-            </center
-            <?php } ?>
-            </div>
-           
-        </form>
-         
-        <div class="sub-cont" >
-            <div class="img" >
-                <div class="img__text m--up" >
-                
-                    <h3>Don't have an account? Please Sign up!<h3>
-                </div>
-                <div class="img__text m--in">
-                    <h3>If you already has an account, just sign in.<h3>
-                </div>
-                <div class="img__btn" >
-                    <span class="m--up">Sign Up</span>
-                    <span class="m--in">Sign In</span>
-                </div>
-            </div>
-            <form method="post" autocomplete="off" action="<?=base_url('Welcome/Registernow')?>"  action="/action_page.php" style="background-image:url('https://images.squarespace-cdn.com/content/v1/54e617b1e4b0453ef23dc90d/1436902427507-C1HWDWK1BNEM59356REO/pawleys+island+photographer+family+beach+silhouette?format=1000w');padding:5px;width:1349px;height:600px; solid black;">
-            <div class="form sign-up" >
+
+    <form method="post" autocomplete="off" action="<?=base_url('Welcome/Registernow')?>"  action="/action_page.php" style="background-image:url('https://images.squarespace-cdn.com/content/v1/54e617b1e4b0453ef23dc90d/1436902427507-C1HWDWK1BNEM59356REO/pawleys+island+photographer+family+beach+silhouette?format=1000w');padding:5px;width:1349px;height:600px; solid black;">
+            <div class="form sign-in" >
                 <h2>Create your Account</h2>
                 <label>
                     <span>Name</span> 
@@ -665,12 +682,56 @@ ul li a:hover{
                 </label>
                 <center>
                 <button type="submit" class="btn btn-primary">Sign Up</button>
-
-               
-            </center>
+                <p style="margin-top: 0px; font-size: 15px; color:#F8F9F9  ; align: center;">EMAIL OR PASSWORD IS WRONG. PLEASE SIGNUP IF YOU DON'T HAVE AN ACCOUNT</p>
+              
+            <?php
+             if($this->session->flashdata('success')) { ?>
+             <p class="text-success text-center" style="margin-top: 0px; font-size: 30px; color: white; align: center;"><?=$this->session->flashdata('success')?></p>
+             <?php }?>
+             </center>
                 
             </div>
             </form>
+        <div class="sub-cont" >
+            <div class="img" >
+                <div class="img__text m--up" >
+                
+                <h3>If you already has an account, just sign in.<h3>
+                </div>
+                <div class="img__text m--in">
+                   
+                    <h3>Don't have an account? Please Sign up!<h3>
+                </div>
+                <div class="img__btn" >
+                    <span class="m--in">Sign Up</span>
+                    <span class="m--up">Sign In</span>
+                </div>
+            </div>
+            <form method="post" autocomplete="off" action="<?=base_url('Welcome/loginnow')?>" action="/action_page.php" style="background-image:url('https://live.staticflickr.com/8448/8009034240_5c197a3e62_b.jpg');padding:5px;width:1349px;height:600px; solid black;">
+        <div class="form sign-up">
+            <h2>Welcome</h2>
+            <label>
+                <span>Email</span>
+                <input type="email"  name="email"  placeholder="enter your email" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp" required/>
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" name="password" placeholder="enter your password" class="form-control" id="exampleInputPassword1" required/>
+            </label>
+            <div>
+            <center>
+            <button type="submit" class="btn btn-default">Sign In</button>
+           </center>
+           </div>
+            <?php
+            if($this->session->flashdata('error')) { ?> 
+            <center>
+            <p class="text-danger text-center" style="margin-top: 5px; color: white; "><?=$this->session->flashdata('error')?></p>
+            </center
+            <?php } ?>
+            </div>
+           
+        </form>
         </div>
     </div>
 
@@ -682,7 +743,16 @@ ul li a:hover{
  
 
        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+            setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
    </header>
    
 </body>
 </html>
+
+
+    

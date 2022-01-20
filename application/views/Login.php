@@ -649,8 +649,8 @@ ul li a:hover{
             <div class="menu">
                 <ul>
                     <li><a href="<?=base_url('Welcome/Front')?>">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="<?=base_url('Welcome/About')?>">ABOUT</a></li>
+                    <li><a href="<?=base_url('Welcome/Login')?>">SERVICE</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
@@ -695,10 +695,11 @@ ul li a:hover{
             <div class="img" >
                 <div class="img__text m--up" >
                 
-                    <h3>Don't have an account? Please Sign up!<h3>
+                <h3>If you already has an account, just sign in.<h3>
                 </div>
                 <div class="img__text m--in">
-                    <h3>If you already has an account, just sign in.<h3>
+                   
+                    <h3>Don't have an account? Please Sign up!<h3>
                 </div>
                 <div class="img__btn" >
                     <span class="m--in">Sign Up</span>

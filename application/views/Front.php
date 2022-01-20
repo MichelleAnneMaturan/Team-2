@@ -461,7 +461,7 @@ ul li a:hover{
    <div class="video-background">
         <div class="video-foreground">
         <iframe src="https://www.youtube.com/embed/y6D4BuHRdvQ?v=y6D4BuHRdvQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=y6D4BuHRdvQ" 
-        frameborder="0" allowfullscreen allowed="autoplay"></iframe>
+        frameborder="0" ></iframe>
         </div>
         <div class="twp-video-layer"></div>
     </div>
@@ -478,9 +478,9 @@ ul li a:hover{
 
             <div class="menu">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="<?=base_url('Welcome/Home')?>">ABOUT</a></li>
-                    <li><a href="<?=base_url('Welcome/Services')?>">SERVICE</a></li>
+                    <li><a href="<?=base_url('Welcome/Front')?>">HOME</a></li>
+                    <li><a href="<?=base_url('Welcome/About')?>">ABOUT</a></li>
+                    <li><a href="<?=base_url('Welcome/Login')?>">SERVICE</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
@@ -543,5 +543,6 @@ ul li a:hover{
     </script>
 </header>
 </body>
+
 
 </html>

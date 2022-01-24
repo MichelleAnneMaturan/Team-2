@@ -12,7 +12,7 @@ class Welcome extends CI_Controller {
 	public function Front()
 	{
 		$this->load->view('Front');
-		$this->load->view('Donate');
+		
 	}
 
 	public function Login()

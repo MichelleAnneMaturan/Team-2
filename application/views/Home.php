@@ -496,7 +496,7 @@ ul li a:hover{
             <h1><br><span>SPONSOR A CHILD</span> <br></h1>
             <p class="par">Take a child off the street or provide for children at risk. Or Give Any Amount</p>
 
-                <button class="cn"><a href="<?=base_url('Welcome/Login')?>">DONATE</a></button>
+                <button class="cn"><a href="<?=base_url('Welcome/Donate')?>">DONATE</a></button>
 
             
 

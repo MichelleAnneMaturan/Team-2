@@ -1001,12 +1001,12 @@ html {
 
 <div class="main" id="section1">
 <div class="container-time">
-<form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8">
+<form  id="ft-form" method="post" autocomplete="off" action="<?=base_url('Welcome/visit')?>"  action="/action_page.php" accept-charset="UTF-8">
   <fieldset>
     <legend style="color:  #FFC300; font-size: 50px;">SCHEDULE A VISIT</legend>
     <label style="color:  #FFC300">
       Full Name
-      <input type="text" name="name" placeholder="ENTER FULL NAME" required >
+      <input type="text" name="username" placeholder="ENTER FULL NAME" required >
     </label>
     <div class="two-cols">
       <label style="color:  #FFC300">
@@ -1025,16 +1025,16 @@ html {
     <div class="two-cols">
       <label style="color:  #FFC300">
         Date
-        <input type="date" name="Appointment request" required>
+        <input type="date" name="date" required>
       </label>
       <label style="color:  #FFC300">
         Time
-        <input type="time" name="Appointment request" required>
+        <input type="time" name="time" required>
       </label>
       
       <label for="pet-select" style="color:  #FFC300">Choose orphanage you want to visit:</label>
 
-        <select name="orphanage" id="pet-select">
+        <select name="orphan" id="pet-select" required>
             <option value="">--Click here to choose--</option>
             <option value="orphange1">KAISAHANG BUHAY FOUNDATION INC.</option>
             <option value="orphange2">ONESIMU BULILIT</option>
@@ -1049,11 +1049,15 @@ html {
     </div>
   </fieldset>
   <div class="btns">
-    <input type="text" name="_gotcha" value="" style="display:none;">
+    <input type="submit" name="_gotcha" value="" style="display:none;">
     <input type="submit" value="Submit request">
   </div>
+  <?php
+ if($this->session->flashdata('success')) { ?>
+ <p class="text-success text-center" style="margin-top: 0px; font-size: 30px; color: white; align: center;"><?=$this->session->flashdata('success')?></p>
+  <?php }?>
+             
 </form>
-
 </body>
     </div>
 

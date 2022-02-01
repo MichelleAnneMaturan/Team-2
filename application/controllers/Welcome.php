@@ -130,6 +130,55 @@ class Welcome extends CI_Controller {
 		$this->load->view('About');
 	}
 
+	function Visit()
+	{
+		if($_SERVER['REQUEST_METHOD']=='POST')
+		{
+			$this->form_validation->set_rules('username', 'User Name', 'required');
+			$this->form_validation->set_rules('email', 'Email', 'required');
+			$this->form_validation->set_rules('phone', 'Phone', 'required');
+			$this->form_validation->set_rules('date', 'Date', 'required');
+			$this->form_validation->set_rules('time', 'Time', 'required');
+			$this->form_validation->set_rules('orphan', 'Orphan', 'required');
+
+			if($this->form_validation->run()==TRUE)
+			{
+				$username = $this->input->post('username');
+				$email = $this->input->post('email');
+				$phone = $this->input->post('phone');
+				$date = $this->input->post('date');
+				$time = $this->input->post('time');
+				$orphan = $this->input->post('orphan');
+
+				$data = array(
+					'username'=>$username,
+					'email'=>$email,
+					'phone'=>($phone),
+					'date'=>$date,
+					'time'=>$time,
+					'orphan'=>$orphan,
+					'status'=>'1'
+				);
+
+				$this->load->model('visit_model');
+				$this->visit_model->insertuser($data);
+				$this->session->set_flashdata('success','REQUEST SUBMITTED SUCCESSFULLY');
+				redirect(base_url('Welcome/Services#section1'));
+
+
+			}
+			else
+			{
+				$this->session->set_flashdata('error', 'Fill all the required fields');
+				redirect(base_url('Welcome/Services#section1'));
+
+			}
+
+		}
+
+	}
+
+
 
 
 

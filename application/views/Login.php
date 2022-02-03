@@ -421,9 +421,10 @@ input {
 }
 
 .navbar{
-    width: 1200px;
+    width: 100%;
     height: 75px;
     margin: auto;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .icon{
@@ -433,7 +434,7 @@ input {
 }
 
 .logo{
-    color: #FFC300  ;
+    color: #F78206  ;
     font-size: 35px;
     font-family: Arial;
     padding-left: 20px;
@@ -441,11 +442,11 @@ input {
     padding-top: 10px;
     margin-top: 5px
 }
-
 .menu{
     width: 400px;
     float: left;
     height: 70px;
+    
 }
 
 ul{
@@ -464,18 +465,18 @@ ul li{
 
 ul li a{
     text-decoration: none;
-    color: #fff;
+    color:  white ;
     font-family: Arial;
     font-weight: bold;
     transition: 0.4s ease-in-out;
 }
 
 ul li a:hover{
-    color: #FFC300 ;
+    color: #F78206 ;
 }
 
 .search{
-    width: 330px;
+    width: 300px;
     float: left;
     margin-left: 270px;
 }
@@ -485,7 +486,7 @@ ul li a:hover{
     width: 200px;
     height: 40px;
     background: transparent;
-    border: 1px solid  #FFC300  ;
+    border: 1px solid  #F78206  ;
     margin-top: 13px;
     color: #fff;
     border-right: none;
@@ -496,13 +497,13 @@ ul li a:hover{
     border-top-left-radius: 5px;
 }
 
-.btn{
-    width: 110px;
-    height: 50px;
-    background: #FFC300  ;
-    border: 2px solid  #FFC300  ;
+.btn2{
+    width: 80px;
+    height: 40px;
+    background: #F78206  ;
+    border: 2px solid  #F78206  ;
     margin-top: 13px;
-    color: #fff;
+    color:  white;
     font-size: 15px;
     border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -548,7 +549,7 @@ ul li a:hover{
 .content .cn{
     width: 160px;
     height: 40px;
-    background:   #FFC300  ;
+    background:   #F78206   ;
     border: none;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -570,7 +571,7 @@ ul li a:hover{
 }
 
 .content span{
-    color:  #FFC300  ;
+    color:  #F78206   ;
     font-size: 65px
 }
 
@@ -657,7 +658,7 @@ ul li a:hover{
 
             <div class="search">
                 <input class="srch" type="search" name="" placeholder="Type To text">
-                <a href="#"> <button class="btn">Search</button></a>
+                <a href="#"> <button class="btn2">Search</button></a>
             </div>
 
         </div> 

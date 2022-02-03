@@ -125,9 +125,9 @@ class Welcome extends CI_Controller {
 		$this->load->view('Services');
 	}
 
-	public function About()
+	public function Contact()
 	{
-		$this->load->view('About');
+		$this->load->view('Contact');
 	}
 
 	function Visit()

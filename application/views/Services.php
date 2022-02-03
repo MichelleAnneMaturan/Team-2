@@ -20,12 +20,11 @@
     padding: 0;
 }
 
-
-
 .navbar{
-    width: 1200px;
-    height: 70px;
+    width: 100%;
+    height: 75px;
     margin: auto;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .icon{
@@ -33,18 +32,22 @@
     float: left;
     height: 70px;
 }
+
 .logo{
-    margin: 0 50px;
-    height: 60px;
-    float: left;
-    color: #FFC300;
+    color: #F78206  ;
     font-size: 35px;
-    text-transform: capitalize;
-    font-weight: bold;
-    letter-spacing: 2px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
 }
-
-
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+    
+}
 
 ul{
     float: left;
@@ -62,20 +65,18 @@ ul li{
 
 ul li a{
     text-decoration: none;
-    color: #fff;
+    color:  white ;
     font-family: Arial;
     font-weight: bold;
     transition: 0.4s ease-in-out;
-
-    
 }
 
 ul li a:hover{
-    color: #FFC300 ;
+    color: #F78206 ;
 }
 
 .search{
-    width: 330px;
+    width: 300px;
     float: left;
     margin-left: 270px;
 }
@@ -85,7 +86,7 @@ ul li a:hover{
     width: 200px;
     height: 40px;
     background: transparent;
-    border: 1px solid  #FFC300  ;
+    border: 1px solid  #F78206  ;
     margin-top: 13px;
     color: #fff;
     border-right: none;
@@ -99,10 +100,10 @@ ul li a:hover{
 .btn{
     width: 100px;
     height: 40px;
-    background: #FFC300  ;
-    border: 2px solid  #FFC300  ;
+    background: white  ;
+    border: 2px solid  #F78206  ;
     margin-top: 13px;
-    color: #fff;
+    color: #F78206;
     font-size: 15px;
     border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -148,7 +149,7 @@ ul li a:hover{
 .content .cn{
     width: 160px;
     height: 40px;
-    background:   #FFC300  ;
+    background:    #F78206  ;
     border: none;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -170,7 +171,7 @@ ul li a:hover{
 }
 
 .content span{
-    color:  #FFC300  ;
+    color:   #F78206  ;
     font-size: 65px
 }
 
@@ -190,7 +191,7 @@ ul li a:hover{
     width: 220px;
     font-family: sans-serif;
     text-align: center;
-    color:   #FFC300  ;
+    color:    #F78206  ;
     font-size: 22px;
     background-color: #fff;
     border-radius: 10px;
@@ -222,27 +223,6 @@ ul li a:hover{
     font-family: Arial;
 }
 
-.btnn{
-    width: 240px;
-    height: 40px;
-    background: #FFC300 ;
-    border: none;
-    margin-top: 30px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    color: #fff;
-    transition: 0.4s ease;
-}
-.btnn:hover{
-    background: #fff;
-    color:   #FFC300 ;
-}
-.btnn a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
 .form .link{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
@@ -251,7 +231,7 @@ ul li a:hover{
 }
 .form .link a{
     text-decoration: none;
-    color: #FFC300  ;
+    color:  #F78206  ;
 }
 .liw{
     padding-top: 15px;
@@ -270,7 +250,7 @@ ul li a:hover{
     transition: 0.3s ease;
 }
 .icons ion-icon:hover{
-    color:  #FFC300  ;
+    color:   #F78206  ;
 }
 
 .loader_bg{
@@ -362,90 +342,13 @@ ul li a:hover{
    
    
 }
-.navbar-nav a {
-	font-family: poppins;
-	font-size: 18px;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-.navbar-light .navbar-brand {
-	color: #fff;
-	font-size: 25px;
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: 2px;
-}
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-	color: #fff;
-}
-.navbar-light .navbar-nav .nav-link {
-	color: #fff;
-}
-.navbar-nav {
-	text-align: center;
-}
-.nav-link {
-	padding: .2rem 1rem;
-}
-.nav-link.active, .nav-link:focus {
-	color: #fff;
-}
-.navbar-toggler {
-	padding: 1px 5px;
-	font-size: 18px;
-	line-height: 0.3;
-	background: #fff;
-}
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-	color: #fff;
-}
-.w-100 {
-	height: 100vh;
-}
-@media only screen and (max-width: 767px) {
-	.navbar-nav.ml-auto {
-		background: rgba(0, 0, 0, 0.5);
-	}
-	.navbar-nav a {
-		font-size: 14px;
-		font-weight: normal;
-	}
-}
+
 
 /* BUTTON DESIGN */
 
 
-.content .cn{
-    width: 160px;
-    height: 40px;
-    background:   #FFC300  ;
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4s ease;
-    
-}
-
-.content .cn a{
-    text-decoration: none;
-    color: #000;
-    transition: .3s ease;
-}
-
-.cn:hover{
-    background-color: #fff;
-}
-
-.content span{
-    color:  #FFC300  ;
-    font-size: 65px
-}
 
 /*SCHEDULE FORM */
-
 
 
 .container-time {
@@ -891,25 +794,31 @@ html {
 <div class="loader_bg">
     <div class="loader"></div>
     </div> 
-<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <div class="main">
-        <div class="navbar">
+
+
+<nav class=" navbar-light fixed-top">
+<div class="navbar">
             <div class="icon">
                 <h2 class="logo">SELAPH</h2>
             </div>
+      
+
             <div class="menu">
-                <ul >
-                    <li><a  href="<?=base_url('Welcome/Home')?>" style="font-size: 18px; color: #FFC300;">HOME</a></li>
-                    <li><a href="#"style="font-size: 18px; color: #FFC300; ">ABOUT</a></li>
-                    <li><a href="<?=base_url('Welcome/Services')?>"style="font-size: 18px; color: #FFC300;">SERVICE</a></li>
-                    <li><a href="#"style="font-size: 18px; color: #FFC300;">CONTACT</a></li>
-                    <li><a href="<?=base_url('Welcome/Front')?>"style="font-size: 18px; color: #FFC300;">Logout</a></li>
+                <ul>
+                    <li><a href="<?=base_url('Welcome/Front')?>">HOME</a></li>
+                    <li><a href="<?=base_url('Welcome/Front#section2')?>">ABOUT</a></li>
+                    <li><a href="<?=base_url('Welcome/Login')?>">SERVICE</a></li>
+                    <li><a href="<?=base_url('Welcome/Contact')?>">CONTACT</a></li>
                 </ul>
             </div>
 
-
+            <div class="search">
+                <input class="srch" type="search" name="" >
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
 
         </div> 
+
 </nav>
 
 

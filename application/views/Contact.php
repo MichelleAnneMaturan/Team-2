@@ -490,7 +490,7 @@ ul li a:hover{
 .btn{
     width: 100px;
     height: 40px;
-    background: #F78206  ;
+    background:  #F78206  ;
     border: 2px solid  #F78206  ;
     margin-top: 13px;
     color:white;
@@ -512,352 +512,7 @@ ul li a:hover{
     outline: none;
 }
 
-
-/*........................................DONATION */
-
-
-.donation-box {
-	width: 390px;
-	height: 386px;
-	background-color: #F5F5F5;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	
-	-webkit-transition: all 0.15s ease-out;
-	-moz-transition: all 0.15s ease-out;
-	-o-transition: all 0.15s ease-out;
-	transition: all 0.15s ease-out;
-}
-
-.donation-box .title {
-	background-color: #C1D82F;
-	width: 100%;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-	color: white;
-	text-align: center;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	font-size: 15px;
-}
-
-.donation-box .donate-button {
-	background-color: #C1D82F;
-	width: 100%;
-	color: white;
-	text-align: center;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	font-size: 18px;
-	bottom: 0px;
-	position: absolute;
-	cursor: pointer;
-	font-weight: 800;
-}
-
-.donation-box .fields {
-	width: 59%;
-	display: block;
-	position: absolute;
-	top: 60px;
-	left: 15px;
-}
-
-.donation-box .fields input {
-	width: 90%;
-	font-size: 17px;
-	padding: 10px;
-	border-radius: 4px;
-	border-width: 0px;
-	color: #5C5C5C;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-	margin-bottom: 10px;
-	-webkit-font-smoothing: antialiased;
-}
-
-::-webkit-input-placeholder {
-   color: #cdcdcd;
-   font-size: 15px;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: #cdcdcd;
-   font-size: 15px;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #cdcdcd;
-   font-size: 15px; 
-}
-
-:-ms-input-placeholder {  
-   color: #cdcdcd;
-   font-size: 15px;
-}
-
-.donation-box .amount {
-	width: 30%;
-	display: block;
-	position: absolute;
-	top: 60px;
-	right: 15px;
-}
-
-.donation-box .amount .button {
-	width: 100%;
-	background-color: gray;
-	margin-bottom: 10px;
-	text-align: center;
-	color: white;
-	padding: 15px 0px 15px 0px;
-	border-radius: 4px;
-	font-size: 20px;
-	cursor: pointer;
-	
-	-webkit-transition: 400ms background-color;
-	-moz-transition: 800ms opacity, 800ms right;
-	-ms-transition: 800ms opacity, 800ms right;
-	-o-transition: 800ms opacity, 800ms right;
-	transition: 200ms background-color;
-}
-
-.donation-box .amount .button:hover {
-	background-color: #393939;
-}
-
-.donation-box .amount .button.selected {
-	background-color: #393939;
-}
-
-.donation-box .amount .button input {
-	min-width: 34px;
-	font-size: 20px;
-	font-weight: 500;
-	border: none;
-	background-color: transparent;
-	color: white;
-	font-family: Montserrat, sans-serif;
-	font-size: 20px;
-	font-stretch: normal;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	border-bottom: 2px dashed white;
-	-webkit-font-smoothing: antialiased;
-	
-	-webkit-transition: all 0.15s ease-out;
-	-moz-transition: all 0.15s ease-out;
-	-o-transition: all 0.15s ease-out;
-	transition: all 0.15s ease-out;
-}
-
-.set-amount {
-	max-width: 96px;
-}
-
-.switch {
-  position: absolute;
-  top: 190px;
-  left: 15px;
-  margin: 20px auto;
-  height: 26px;
-  width: 58.5%;
-  background: white;
-  border-radius: 3px;
-}
-
-.switch-label {
-  position: relative;
-  z-index: 2;
-  float: left;
-  width: 49%;
-  line-height: 26px;
-  font-size: 11px;
-  color: #5C5C5C;
-  text-align: center;
-  cursor: pointer;
-  font-weight: bold;
-}
-.switch-label:active {
-  font-weight: bold;
-}
-
-.switch-label-off {
-  padding-left: 2px;
-}
-
-.switch-label-on {
-  padding-right: 2px;
-}
-
-.switch-input {
-  display: none;
-}
-.switch-input:checked + .switch-label {
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.65);
-  
-  -webkit-transition: 0.15s ease-out;
-  -moz-transition: 0.15s ease-out;
-  -o-transition: 0.15s ease-out;
-  transition: 0.15s ease-out;
-}
-.switch-input:checked + .switch-label-on ~ .switch-selection {
-  left: 114px;
-}
-
-.switch-selection {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: 2px;
-  left: 2px;
-  width: 49%;
-  height: 22px;
-  background: #65bd63;
-  border-radius: 3px;
-  background-color: #C1D82F;
-  
-  -webkit-transition: left 0.15s ease-out;
-  -moz-transition: left 0.15s ease-out;
-  -o-transition: left 0.15s ease-out;
-  transition: left 0.15s ease-out;
-}
-
-.checkboxes {
-	position: absolute;
-	top: 242px;
-	left: 13px;
-}
-
-.checkboxes label {
-	position: relative;
-	top: -8px;
-	font-size: 13px;
-	color: gray;
-}
-
-.checkbox {
-	-webkit-appearance: none;
-	background-color: #fafafa;
-	border: 1px solid #C1D82F;
-	padding: 9px;
-	border-radius: 3px;
-	display: inline-block;
-	position: relative;
-	
-	-webkit-transition: all 0.15s ease-out;
-	-moz-transition: all 0.15s ease-out;
-	-o-transition: all 0.15s ease-out;
-	transition: all 0.15s ease-out;
-}
-
-.checkbox:active, .checkbox:checked:active {
-	
-}
-
-.checkbox:checked {
-	background-color: #C1D82F;
-	border: 1px solid #C1D82F;
-	color: white;
-}
-
-.checkbox:checked:after {
-	content: '\2714';
-	font-size: 14px;
-	position: absolute;
-	top: 0px;
-	left: 3px;
-	color: white;
-}
-
-.confirm {
-	display: none;
-	position: absolute;
-	top: 335px;
-	left: 15px;
-	right: 15px;
-	font-size: 16px;
-	
-	-webkit-transition: all 0.15s ease-out;
-	-moz-transition: all 0.15s ease-out;
-	-o-transition: all 0.15s ease-out;
-	transition: all 0.15s ease-out;
-}
-
-.confirm i {
-	font-weight: bold;
-	text-decoration: underline;
-	font-style: normal;
-}
-
-::placeholder {
-  color: black;
-  
-}
-
 </style>
-
-<script>
-    var firstName = "";
-		var lastName = "";
-		var email = "";
-		var dType = "";
-		var receipt = "";
-		var anon = "";
-		var list = "";
-		var amount = "";
-		
-		$('.set-amount').autoGrow(0);
-		
-		/*
-			if(isiPad || jQuery.browser.mobile){
-				$('#team').hide()
-				$('.team-mobile').show();	
-			}else{
-				$('#team').show()
-				$('.team-mobile').hide();
-			}
-		*/
-		
-		//Set & Highlight Donation Amount
-		$(".button").click(function(){
-			$(".button").removeClass("selected");
-			$(this).addClass("selected");
-			
-			$(this).find("input").focus();
-		});
-		
-		//Grow the donation box if they type more than 4 numbers
-		$(".set-amount").keyup(function(){
-			
-			if (this.value != this.value.replace(/[^0-9\.]/g, '')) {
-		       this.value = this.value.replace(/[^0-9\.]/g, '');
-		    }
-
-		});
-		
-		
-		$("input").on("change", function(){
-			// $(".donation-box").css("height", "500px");
-			
-			firstName = $("#firstName").val();
-			lastName = $("#lastName").val();
-			email = $("#email").val();
-			
-			if ( $("#one-time").prop( "checked" ) ){
-				dType = "One-Time";
-			}
-			if ( $("#monthly").prop( "checked" ) ){
-				dType = "Monthly";
-			}
-
-		});
-</script>
 
   <body>
   <div class="navbar">
@@ -876,7 +531,7 @@ ul li a:hover{
             </div>
 
             <div class="search">
-                <input class="srch" type="search" name="" >
+                <input class="srch" type="search" name="" placeholder="Type To text">
                 <a href="#"> <button class="btn">Search</button></a>
             </div>
 
@@ -887,9 +542,9 @@ ul li a:hover{
       
       <div class="form">
         <div class="contact-info">
-          <h3 class="title">Donate Now!</h3>
+          <h3 class="title">How can we help?</h3>
           <p class="text">
-          100% of your gift will go directly to orphan care.
+            Please get in touch and our expert support team will answer all your questions.
           </p>
 
           <div class="info">
@@ -931,48 +586,33 @@ ul li a:hover{
           <span class="circle two"></span>
 
           <form action="index.html" autocomplete="off">
-            <h3 class="title">Donation form</h3>
+            <h3 class="title">Contact us</h3>
             <div class="input-container">
+              <input type="text" name="name" class="input" placeholder="Username" />
               
-	           
-            <div class="donation-box">
-	            <div class="title" style="background-color: black;">Donation Information</div>
-	            
-	            <div class="fields">
-		            <input type="text" id="firstName" placeholder="First Name"> </input>
-		            <input type="text" id="lastName" placeholder="Last Name"> </input>
-		            <input type="text" id="email" placeholder="Email"> </input>
-	            </div>
-	            
-	            <div class="amount">
-		            <div class="button">$30</div>
-		            <div class="button">$50</div>
-		            <div class="button">$100</div>
-		            <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
-	            </div>
-	        
-			    
-			    <div class="checkboxes">
-					<input type="checkbox" id="receipt" class="checkbox" />
-					<label for="receipt">Email Me A Receipt</label>
-					<br />
-					<input type="checkbox" id="anon" class="checkbox" />
-					<label for="anon">Give Anonymously</label>
-					<br />
-					<input type="checkbox" id="list" class="checkbox" />
-					<label for="list">Add Me To Email List</label>
-			    </div>
-			    
-			    <div class="confirm">
-				    
-			    </div>
-	            
-	            <div class="donate-button" style="background-color: black;"><i class="fa fa-credit-card" ></i> Donate Now</div>
+              <span>Username</span>
             </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input"  placeholder="Email"/>
             
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" placeholder="Phone"/>
+              
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"  placeholder="Message"></textarea>
+            
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
         </div>
+      </div>
+    </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://raw.githubusercontent.com/jerryluk/jquery.autogrow/master/jquery.autogrow-min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

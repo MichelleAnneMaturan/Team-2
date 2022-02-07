@@ -160,7 +160,12 @@ header {
     width: 100%;
     height: 75px;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+ 
    
 }
 
@@ -274,7 +279,7 @@ ul li a:hover{
     letter-spacing: 1.2px;
     line-height: 30px;
     position: relative;
-     bottom: 50px; right: 200px;
+     bottom: 0px; right: 200px;
 }
 
 .content h1{
@@ -284,7 +289,7 @@ ul li a:hover{
     margin-top: 9%;
     letter-spacing: 2px;
     position: relative;
-    bottom: 50px; right: 200px;
+    bottom: 0px; right: 200px;
 }
 
 .content .cn{
@@ -294,7 +299,7 @@ ul li a:hover{
     border: none;
     font-size: 18px;
     position: relative;
-    top:0px; left: 200px;
+    top:50px; left: -25px;
     border-radius: 10px;
     cursor: pointer;
     transition: .4s ease;
@@ -322,9 +327,8 @@ ul li a:hover{
     width: 300px;
     height: 420px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-
     position: absolute;
-     top:50px;
+     top:100px;
     transform: translate(0%,-5%);
     padding: 30px;
     
@@ -699,6 +703,7 @@ html {
    justify-content: center;
     height: 100%;
 }
+
 
 
 

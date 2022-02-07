@@ -945,10 +945,10 @@ ul li a:hover{
 	            </div>
 	            
 	            <div class="amount">
-		            <div class="button">$30</div>
-		            <div class="button">$50</div>
-		            <div class="button">$100</div>
-		            <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
+		            <div class="button">₱500</div>
+		            <div class="button">₱1000</div>
+		            <div class="button">₱1500</div>
+		            <div class="button">₱<input type="text" class="set-amount" placeholder=""> </input></div>
 	            </div>
 	        
 			    

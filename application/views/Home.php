@@ -157,9 +157,16 @@ header {
 }
 
 .navbar{
-    width: 1200px;
+    width: 100%;
     height: 75px;
     margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+ 
+   
 }
 
 .icon{
@@ -272,7 +279,7 @@ ul li a:hover{
     letter-spacing: 1.2px;
     line-height: 30px;
     position: relative;
-     bottom: 50px; right: 200px;
+     bottom: 0px; right: 600px;
 }
 
 .content h1{
@@ -282,7 +289,27 @@ ul li a:hover{
     margin-top: 9%;
     letter-spacing: 2px;
     position: relative;
-    bottom: 50px; right: 200px;
+    bottom: 0px; right: 600px;
+}
+
+.content .par1{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    position: relative;
+     bottom: 100px; right: -20px;
+}
+
+.content h2{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 100px; right: 50px;
 }
 
 .content .cn{
@@ -292,12 +319,15 @@ ul li a:hover{
     border: none;
     font-size: 18px;
     position: relative;
-    top:0px; left: 200px;
+    top:30px; left: -420px;
     border-radius: 10px;
     cursor: pointer;
     transition: .4s ease;
     
 }
+
+
+
 
 
 
@@ -320,9 +350,8 @@ ul li a:hover{
     width: 300px;
     height: 420px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-
     position: absolute;
-     top:50px;
+     top:150px;
     transform: translate(0%,-5%);
     padding: 30px;
     
@@ -724,14 +753,13 @@ html {
             <div class="icon">
                 <h2 class="logo">SELAPH</h2>
             </div>
-      
-
             <div class="menu">
                 <ul>
                     <li><a href="<?=base_url('Welcome/Front')?>">HOME</a></li>
                     <li><a href="<?=base_url('Welcome/Front#section2')?>">ABOUT</a></li>
                     <li><a href="<?=base_url('Welcome/Login')?>">SERVICE</a></li>
                     <li><a href="<?=base_url('Welcome/Contact')?>">CONTACT</a></li>
+                    <li><a href="<?=base_url('Welcome/Contact')?>">Logout</a></li>
                 </ul>
             </div>
 
@@ -740,44 +768,25 @@ html {
                 <a href="#"> <button class="btn">Search</button></a>
             </div>
 
+            
+
         </div> 
+
+        
         <div class="content">
+            
             <h1 style="float: right;"><br><span>SPONSOR A CHILD</span> <br></h1>
             <p class="par" style="float: right;">Take a child off the street or provide for children at risk. Or Give Any Amount</p>
 
                 <button class="cn" style="float: right;"><a href="<?=base_url('Welcome/Donate')?>">DONATE</a></button>
+
+                <h2 class="h2" style="float: right;"><br><span>VISIT US TODAY</span> <br></h2>
+            <p class="par1" style="float: right;">Take a child off the street or provide for children at risk. Or Give Any Amount</p>
+
+                <button class="cn" style="float: right;  top:-70px; left: 200px;"><a href="<?=base_url('Welcome/Services')?>">VISIT</a></button>
+              
                
-                <form method="post" autocomplete="off" action="<?=base_url('Welcome/loginnow')?>" action="/action_page.php">
-
-                <div class="form">
-                    <h2>Login Here</h2>
-                    <input type="email"  name="email"  placeholder="enter your email" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp" required/>
-                    <input type="password" name="password" placeholder="enter your password" class="form-control" id="exampleInputPassword1" required/>
-                    <button type="submit" class="btn btn-default">Login</button>
-                    <div>
-                    <p class="link">Don't have an account<br>
-                    <a href="<?=base_url('Welcome/Login')?>">Sign up </a> here</a></p>
-                    <p class="liw">Log in with</p>
-
-                    <div class="icons">
-                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-                    </div>
-                </div>
-                    <?php
-                    if($this->session->flashdata('error')) { ?> 
-                   
-                    <p class="text-danger text-center" style="margin-top: 5px; color: white; "><?=$this->session->flashdata('error')?></p>
-                  
-                    <?php } ?>
-                    </div>
-    
-                   
-
-                </div>
+               
 </div>
 </div>
 </div>

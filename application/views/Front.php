@@ -279,7 +279,7 @@ ul li a:hover{
     letter-spacing: 1.2px;
     line-height: 30px;
     position: relative;
-     bottom: 0px; right: 200px;
+     bottom: -50px; right: 200px;
 }
 
 .content h1{
@@ -289,7 +289,7 @@ ul li a:hover{
     margin-top: 9%;
     letter-spacing: 2px;
     position: relative;
-    bottom: 0px; right: 200px;
+    bottom: -50px; right: 200px;
 }
 
 .content .cn{
@@ -299,7 +299,7 @@ ul li a:hover{
     border: none;
     font-size: 18px;
     position: relative;
-    top:50px; left: -25px;
+    top:100px; left: -25px;
     border-radius: 10px;
     cursor: pointer;
     transition: .4s ease;
@@ -328,7 +328,7 @@ ul li a:hover{
     height: 420px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     position: absolute;
-     top:100px;
+     top:150px;
     transform: translate(0%,-5%);
     padding: 30px;
     
@@ -708,7 +708,6 @@ html {
 
 
 
-
 </style>
 
 </head>
@@ -745,8 +744,13 @@ html {
                 <a href="#"> <button class="btn">Search</button></a>
             </div>
 
+            
+
         </div> 
+
+        
         <div class="content">
+            
             <h1 style="float: right;"><br><span>SPONSOR A CHILD</span> <br></h1>
             <p class="par" style="float: right;">Take a child off the street or provide for children at risk. Or Give Any Amount</p>
 

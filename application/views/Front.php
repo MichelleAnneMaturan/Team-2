@@ -734,7 +734,7 @@ html {
                 <ul>
                     <li><a href="<?=base_url('Welcome/Front')?>">HOME</a></li>
                     <li><a href="<?=base_url('Welcome/Front#section2')?>">ABOUT</a></li>
-                    <li><a href="<?=base_url('Welcome/Login')?>">SERVICE</a></li>
+                    <li><a href="<?=base_url('Welcome/Loginser')?>">SERVICE</a></li>
                     <li><a href="<?=base_url('Welcome/Contact')?>">CONTACT</a></li>
                 </ul>
             </div>

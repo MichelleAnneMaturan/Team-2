@@ -668,7 +668,7 @@ ul li a:hover{
 
     <div class="cont">
 
-    <form method="post" autocomplete="off" action="<?=base_url('Welcome/Registernow')?>"  action="/action_page.php" style="background-image:url('https://images.squarespace-cdn.com/content/v1/54e617b1e4b0453ef23dc90d/1436902427507-C1HWDWK1BNEM59356REO/pawleys+island+photographer+family+beach+silhouette?format=1000w');padding:5px;width:1349px;height:600px; solid black;">
+    <form method="post" autocomplete="off" action="<?=base_url('Welcome/Registernow1')?>"  action="/action_page.php" style="background-image:url('https://images.squarespace-cdn.com/content/v1/54e617b1e4b0453ef23dc90d/1436902427507-C1HWDWK1BNEM59356REO/pawleys+island+photographer+family+beach+silhouette?format=1000w');padding:5px;width:1349px;height:600px; solid black;">
             <div class="form sign-in" >
                 <h2>Create your Account</h2>
                 <label>
@@ -685,10 +685,11 @@ ul li a:hover{
                 </label>
                 <center>
                 <button type="submit" class="btn btn-primary">Sign Up</button>
+                <p style="margin-top: 0px; font-size: 15px; color:#F8F9F9;  background-color: rgba(0, 0, 0, 0.6); align: center;">EMAIL OR PASSWORD IS WRONG. PLEASE SIGNUP IF YOU DON'T HAVE AN ACCOUNT</p>
               
             <?php
              if($this->session->flashdata('success')) { ?>
-             <p class="text-success text-center" style="margin-top: 0px; font-size: 30px; color: white; align: center; background-color: rgba(0, 0, 0, 0.6); "><?=$this->session->flashdata('success')?></p>
+             <p class="text-success text-center" style="margin-top: 0px; font-size: 30px; color: white; align: center;"><?=$this->session->flashdata('success')?></p>
              <?php }?>
              </center>
                 
@@ -709,7 +710,7 @@ ul li a:hover{
                     <span class="m--up">Sign In</span>
                 </div>
             </div>
-            <form method="post" autocomplete="off" action="<?=base_url('Welcome/loginnow')?>" action="/action_page.php" style="background-image:url('https://live.staticflickr.com/8448/8009034240_5c197a3e62_b.jpg');padding:5px;width:1349px;height:600px; solid black;">
+            <form method="post" autocomplete="off" action="<?=base_url('Welcome/loginnow1')?>" action="/action_page.php" style="background-image:url('https://live.staticflickr.com/8448/8009034240_5c197a3e62_b.jpg');padding:5px;width:1349px;height:600px; solid black;">
         <div class="form sign-up">
             <h2>Welcome</h2>
             <label>

@@ -523,10 +523,11 @@ ul li a:hover{
 
             <div class="menu">
                 <ul>
-                    <li><a href="<?=base_url('Welcome/Front')?>">HOME</a></li>
-                    <li><a href="<?=base_url('Welcome/Front#section2')?>">ABOUT</a></li>
-                    <li><a href="<?=base_url('Welcome/Login')?>">SERVICE</a></li>
-                    <li><a href="<?=base_url('Welcome/Contact')?>">CONTACT</a></li>
+                    <li><a href="<?=base_url('Welcome/Home')?>">HOME</a></li>
+                    <li><a href="<?=base_url('Welcome/Home#section2')?>">ABOUT</a></li>
+                    <li><a href="<?=base_url('Welcome/Services')?>">SERVICE</a></li>
+                    <li><a href="<?=base_url('Welcome/Contactlog')?>">CONTACT</a></li>
+                    <li><a href="<?=base_url('Welcome/Front')?>">Logout</a></li>
                 </ul>
             </div>
 
@@ -607,7 +608,7 @@ ul li a:hover{
             
               <span>Message</span>
             </div>
-            <input style="background-color: orange" type="submit" value="Send" class="btn" />
+            <input   style="background-color: orange" type="submit" value="Send" class="btn" />
           </form>
         </div>
       </div>

@@ -65,6 +65,51 @@ class Welcome extends CI_Controller {
 		}
 	}
 
+	public function loginnow1()
+	{
+		if($_SERVER['REQUEST_METHOD']=='POST')
+		{
+			$this->form_validation->set_rules('email', 'Email','required');
+			$this->form_validation->set_rules('password', 'Password','required');
+
+			if($this->form_validation->run()==TRUE)
+			{
+				$email = $this->input->post('email');
+				$password = $this->input->post('password');
+				$password = sha1($password);
+
+				$this->load->model('user_model');
+				$status = $this->user_model->checkPassword($password, $email);
+				if($status!=false)
+				{
+					$username = $status->username;
+					$email = $status->email;
+
+					$session_data = array(
+						'username' => $username,
+						'email' =>$email,
+					);
+					$this->session->set_userdata('UserLoginSession', $session_data);
+					redirect(base_url('Welcome/Services'));
+				}
+				else
+				{
+					
+					$this->load->view('Errorser');
+
+				}
+
+			}
+			else
+			{
+				$this->session->set_flashdata('error', 'Fill all the required fields');
+				redirect(base_url('Welcome/login'));
+
+			}
+
+		}
+	}
+
 
 	function Registernow()
 	{
@@ -105,6 +150,45 @@ class Welcome extends CI_Controller {
 
 	}
 
+	function Registernow1()
+	{
+		if($_SERVER['REQUEST_METHOD']=='POST')
+		{
+			$this->form_validation->set_rules('username', 'User Name', 'required');
+			$this->form_validation->set_rules('email', 'Email', 'required');
+			$this->form_validation->set_rules('password', 'Password', 'required');
+
+			if($this->form_validation->run()==TRUE)
+			{
+				$username = $this->input->post('username');
+				$email = $this->input->post('email');
+				$password = $this->input->post('password');
+
+				$data = array(
+					'username'=>$username,
+					'email'=>$email,
+					'password'=>sha1($password),
+					'status'=>'1'
+				);
+
+				$this->load->model('user_model');
+				$this->user_model->insertuser($data);
+				$this->session->set_flashdata('success','Successfully User Created');
+				redirect(base_url('Welcome/Loginser'));
+
+
+			}
+			else
+			{
+				$this->session->set_flashdata('error', 'Fill all the required fields');
+				redirect(base_url('Welcome/Loginser'));
+
+			}
+
+		}
+
+	}
+
 	public function Donate()
 	{
 		$this->load->view('Donate');
@@ -129,6 +213,27 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('Contact');
 	}
+
+	public function Loginser()
+	{
+		$this->load->view('Loginser');
+	}
+
+	public function Errorser()
+	{
+		$this->load->view('Errorser');
+	}
+
+	public function Contactlog()
+	{
+		$this->load->view('Contactlog');
+	}
+
+	public function Donatelog()
+	{
+		$this->load->view('Donatelog');
+	}
+
 
 	function Visit()
 	{

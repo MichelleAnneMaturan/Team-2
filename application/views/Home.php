@@ -755,11 +755,11 @@ html {
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="<?=base_url('Welcome/Front')?>">HOME</a></li>
-                    <li><a href="<?=base_url('Welcome/Front#section2')?>">ABOUT</a></li>
-                    <li><a href="<?=base_url('Welcome/Login')?>">SERVICE</a></li>
-                    <li><a href="<?=base_url('Welcome/Contact')?>">CONTACT</a></li>
-                    <li><a href="<?=base_url('Welcome/Contact')?>">Logout</a></li>
+                    <li><a href="<?=base_url('Welcome/Home')?>">HOME</a></li>
+                    <li><a href="<?=base_url('Welcome/Home#section2')?>">ABOUT</a></li>
+                    <li><a href="<?=base_url('Welcome/Services')?>">SERVICE</a></li>
+                    <li><a href="<?=base_url('Welcome/Contactlog')?>">CONTACT</a></li>
+                    <li><a href="<?=base_url('Welcome/Front')?>">Logout</a></li>
                 </ul>
             </div>
 
@@ -778,7 +778,7 @@ html {
             <h1 style="float: right;"><br><span>SPONSOR A CHILD</span> <br></h1>
             <p class="par" style="float: right;">Take a child off the street or provide for children at risk. Or Give Any Amount</p>
 
-                <button class="cn" style="float: right;"><a href="<?=base_url('Welcome/Donate')?>">DONATE</a></button>
+                <button class="cn" style="float: right;"><a href="<?=base_url('Welcome/Donatelog')?>">DONATE</a></button>
 
                 <h2 class="h2" style="float: right;"><br><span>VISIT US TODAY</span> <br></h2>
             <p class="par1" style="float: right;">Take a child off the street or provide for children at risk. Or Give Any Amount</p>

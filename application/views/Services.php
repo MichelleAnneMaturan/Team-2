@@ -282,7 +282,7 @@ ul li a:hover{
     opacity: 0;
 }
 .loader:before{
-  animation-delay: .5s;
+  animation-delay: .3s;
 }
 @keyframes loader {
     0% {
@@ -805,10 +805,11 @@ html {
 
             <div class="menu">
                 <ul>
-                    <li><a href="<?=base_url('Welcome/Front')?>">HOME</a></li>
+                    <li><a href="<?=base_url('Welcome/Home')?>">HOME</a></li>
                     <li><a href="<?=base_url('Welcome/Front#section2')?>">ABOUT</a></li>
-                    <li><a href="<?=base_url('Welcome/Login')?>">SERVICE</a></li>
-                    <li><a href="<?=base_url('Welcome/Contact')?>">CONTACT</a></li>
+                    <li><a href="<?=base_url('Welcome/Services')?>">SERVICE</a></li>
+                    <li><a href="<?=base_url('Welcome/Contactlog')?>">CONTACT</a></li>
+                    <li><a href="<?=base_url('Welcome/Front')?>">Logout</a></li>
                 </ul>
             </div>
 
@@ -835,16 +836,16 @@ html {
         <div class="carousel-item active" >
 				<img alt="First slide" class="d-block w-100" src="https://www.kbf.ph/wp-content/uploads/photo-gallery/imported_from_media_libray//adoption12chosen-to-be-loved.png">
 				<div class="carousel-caption d-none d-md-block" style="margin: -100px">
-					<h5 class="animated zoomIn" style="animation-delay: 1s; color:  #FFC300; font-family: rockwell;">Kaisahang Buhay Foundation Inc.</h5>
+					<h5 class="animated zoomIn" style="animation-delay: 1s; color:  #F78206; font-family: rockwell;">Kaisahang Buhay Foundation Inc.</h5>
 					<p class="animated fadeInLeft" style="animation-delay: 2s">KBFs Day Care Service establishes and operates day care centers in disadvantaged communities as a venue for children to develop their psycho-social, intellectual, physical and emotional functioning based on accepted child development concepts.</p>
-					<p class="animated zoomIn" style="animation-delay: 3s"><a href="#section1" >Schedule a Visit</a></p>
+					<p class="animated zoomIn" style="animation-delay: 3s; "><a href="#section1" >Schedule a Visit</a></p>
                     <p class="animated zoomIn" style="animation-delay: 3s"><a href="https://cms.org.ph/"  target="_blank">Visit Our Page for more info</a></p>
 				</div>
 			</div>
 			<div class="carousel-item ">
 				<img alt="Third slide" class="d-block w-100" src="http://bulilit.onesimo.ch/wp-content/gallery/intro/bulilit-520.jpg">
 				<div class="carousel-caption d-none d-md-block" style="margin: -100px">
-					<h5 class="animated zoomIn" style="animation-delay: 1s; color:  #FFC300; font-family: rockwell;">Onesimu Bulilit</h5>
+					<h5 class="animated zoomIn" style="animation-delay: 1s; color:  #F78206; font-family: rockwell;">Onesimu Bulilit</h5>
 					<p class="animated bounceInLeft" style="animation-delay: 2s ">Onesimo Bulilit Foundation is a faith-based, non-profit, non-government organization working among street children and their families in Manila, Philippines. We promote and practice education that takes into consideration the child’s nature, preferences, and capacity and aims at developing the child’s full potential.</p>
 					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="#section1">Schedule a Visit</a></p>
                     <p class="animated bounceInRight" style="animation-delay: 3s"><a href="http://bulilit.onesimo.ch/" target="_blank">Visit our page for more info</a></p>
@@ -853,7 +854,7 @@ html {
 			<div class="carousel-item">
 				<img alt="Second slide" class="d-block w-100" src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.6435-9/84357713_2988895107801001_5072160289844101120_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=e3f864&_nc_eui2=AeFKdHU1SE80yW94fLvGT2vaIBMxXEBgvasgEzFcQGC9q-NDvqWsFIJVLr7dkeC-430TlnRhyKb502kT-jDHobQL&_nc_ohc=w7dx79KHmAsAX9Nvj1o&_nc_oc=AQmse80QCGz0tyAkG4jPj-5cdF4n98R_g3TL_HjbAMwH8oWfHUgbGhk1_xnbwbQ7Wyc&_nc_ht=scontent.fmnl17-1.fna&oh=00_AT_DwwDocNTlIxF3pk9VBDGDSnM98FJGDkvPjX6zAL7FFA&oe=620CBAAD">
 				<div class="carousel-caption d-none d-md-block" style="margin: -120px">
-					<h5 class="animated zoomIn" style="animation-delay: 1s; color:  #FFC300; font-family: rockwell;">Alay Pagasa Christian Foundation, Inc.</h5>
+					<h5 class="animated zoomIn" style="animation-delay: 1s; color:  #F78206; font-family: rockwell;">Alay Pagasa Christian Foundation, Inc.</h5>
 					<p class="animated fadeInUp" style="animation-delay: 2s">Philippine Childrens Ministries Network, Inc. is established in November 1998 as a network of Christian non-government organizations and churches with ministry to children-at-risk. PCMN has become a unifying voice for the 51 member organizations and churches in advocating for the protection and participation of children and youth.</p>
 					<p class="animated zoomIn" style="animation-delay: 3s"><a href="#section1" >Schedule a Visit</a></p>
                     <p class="animated zoomIn" style="animation-delay: 3s"><a href="https://www.thepcmn.org/mem1" target="_blank" >Visit Our Page for more info</a></p>
@@ -863,7 +864,7 @@ html {
 			<div class="carousel-item">
 				<img alt="Third slide" class="d-block w-100" src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t31.18172-8/17620138_1287141501364687_3586334783967771972_o.jpg?_nc_cat=110&ccb=1-5&_nc_sid=9267fe&_nc_eui2=AeEZeZX0jfM64mEXtsfdWNjrGatmh2jQXkcZq2aHaNBeR5kP_6eNmFNjZkTkDXCNvn2CZ-r5j1qo5gn1PY2G71Ye&_nc_ohc=CtTtNWI9oxMAX_jn8Qk&_nc_ht=scontent.fcrk1-4.fna&oh=00_AT9LWkEVMaWtTLgHKYuIvwPkEX0md6gZ7LgLpT9adc7klg&oe=620ECDA5">
 				<div class="carousel-caption d-none d-md-block"  style="margin: -100px">
-					<h5 class="animated zoomIn" style="animation-delay: 1s; color:  #FFC300; font-family: rockwell;">Christian Compassion Ministries</h5>
+					<h5 class="animated zoomIn" style="animation-delay: 1s; color:  #F78206; font-family: rockwell;">Christian Compassion Ministries</h5>
 					<p class="animated fadeInLeft" style="animation-delay: 2s">CCM is a Baptist Ministry that provides aid to more than 300 families in slum areas in Manila and to children who have been abused or neglected. To provide the poor and neglected with educational assistance, shelter, livelihood programs and primarily nourish their souls with the Word of God. </p>
 					<p class="animated zoomIn" style="animation-delay: 3s"><a href="#section1" >Schedule a Visit</a></p>
                     <p class="animated zoomIn" style="animation-delay: 3s"><a href="https://www.ccmmanila.org/"  target="_blank">Visit Our Page for more info</a></p>
@@ -872,7 +873,7 @@ html {
             <div class="carousel-item">
 				<img alt="Second slide" class="d-block w-100" src="https://lh5.googleusercontent.com/p/AF1QipP3UKTmbc8XQQ6NORXZcBXGppRDm1C6sOESK8B7=w600-h321-p-k-no">
 				<div class="carousel-caption d-none d-md-block"  style="margin: -140px">
-					<h5 class="animated zoomIn" style="animation-delay: 1s; color:  #FFC300; font-family: rockwell;">Christian Mission Service Philippines</h5>
+					<h5 class="animated zoomIn" style="animation-delay: 1s; color:  #F78206; font-family: rockwell;">Christian Mission Service Philippines</h5>
 					<p class="animated fadeInUp" style="animation-delay: 2s">Christian Mission Service Philippines is a child-caring organization providing holistic development services for children. We have served over 6,000 Filipino children to date. We operate a children’s village in Naic, Cavite, daycare centers in Pinagbuhatan, Pasig City, and Calaca, Batangas, and a school for pre-school and elementary pupils in Sipocot, Camarines, Sur.
 
 </p>
@@ -912,36 +913,36 @@ html {
 <div class="container-time">
 <form  id="ft-form" method="post" autocomplete="off" action="<?=base_url('Welcome/visit')?>"  action="/action_page.php" accept-charset="UTF-8">
   <fieldset>
-    <legend style="color:  #FFC300; font-size: 50px;">SCHEDULE A VISIT</legend>
-    <label style="color:  #FFC300">
+    <legend style="color:  #F78206; font-size: 50px;">SCHEDULE A VISIT</legend>
+    <label style="color:  #F78206">
       Full Name
       <input type="text" name="username" placeholder="ENTER FULL NAME" required >
     </label>
     <div class="two-cols">
-      <label style="color:  #FFC300">
+      <label style="color:  #F78206">
         Email address
         <input type="email" name="email" placeholder="ENTER EMAIL ADDRESS" required >
       </label>
-      <label style="color:  #FFC300">
+      <label style="color:  #F78206">
         Phone number
         <input type="tel" name="phone" placeholder="ENTER PHONE NUMBER" required >
       </label>
     </div>
   </fieldset>
   <fieldset>
-    <legend style="color:  #FFC300">Appointment request</legend>
+    <legend style="color:  #F78206">Appointment request</legend>
 
     <div class="two-cols">
-      <label style="color:  #FFC300">
+      <label style="color:  #F78206">
         Date
         <input type="date" name="date" required>
       </label>
-      <label style="color:  #FFC300">
+      <label style="color:  #F78206">
         Time
         <input type="time" name="time" required>
       </label>
       
-      <label for="pet-select" style="color:  #FFC300">Choose orphanage you want to visit:</label>
+      <label for="pet-select" style="color:  #F78206">Choose orphanage you want to visit:</label>
 
         <select name="orphan" id="pet-select" required>
             <option value="">--Click here to choose--</option>

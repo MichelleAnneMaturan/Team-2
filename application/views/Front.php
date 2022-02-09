@@ -534,6 +534,7 @@ ul li a:hover{
 .container-time {
 background-color: rgba(0, 0, 0, 1.0);
 width: 100%;
+
 height: 100vh;
 background-size: cover;
 

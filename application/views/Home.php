@@ -220,7 +220,7 @@ ul li a:hover{
 .search{
     width: 330px;
     float: left;
-    margin-left: 270px;
+    margin-left: 400px;
 }
 
 .srch{
@@ -764,7 +764,7 @@ html {
             </div>
 
             <div class="search">
-                <input class="srch" type="search" name="" placeholder="Type To text">
+                <input class="srch" type="search" name="" >
                 <a href="#"> <button class="btn">Search</button></a>
             </div>
 

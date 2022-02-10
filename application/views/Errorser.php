@@ -480,7 +480,7 @@ ul li a:hover{
 .search{
     width: 300px;
     float: left;
-    margin-left: 270px;
+    margin-left: 400px;
 }
 
 .srch{
@@ -654,7 +654,7 @@ ul li a:hover{
                     <li><a href="<?=base_url('Welcome/Front')?>">HOME</a></li>
                     <li><a href="<?=base_url('Welcome/About')?>">ABOUT</a></li>
                     <li><a href="<?=base_url('Welcome/Login')?>">SERVICE</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="<?=base_url('Welcome/Contact')?>">CONTACT</a></li>
                 </ul>
             </div>
 

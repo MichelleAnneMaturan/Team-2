@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Form</title>
+    <title>SELA</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel = "icon" href = 
+"https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/270191871_980404992573815_776067903002688019_n.png?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeGf5pgypNyzGv3uIxGAF2PBrzbk0H7uQDqvNuTQfu5AOg88LJbuFlyeCKsr2TG_SyHdLs7LPjK_z1bDY9nGuSYr&_nc_ohc=tEXST5trolEAX_eRyS3&tn=eFuJ3yCXcVJpEiDY&_nc_ht=scontent.fmnl17-1.fna&oh=03_AVI5Z_3voaRc2KSvr5FtQInajQq7JcajhVgzTu-tS7sygw&oe=62066D09" 
+        type = "image/x-icon">
+
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
@@ -468,7 +472,7 @@ ul li a:hover{
 .search{
     width: 300px;
     float: left;
-    margin-left: 270px;
+    margin-left: 400px;
 }
 
 .srch{
@@ -512,9 +516,63 @@ ul li a:hover{
     outline: none;
 }
 
+
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background : #fff;
+    width: 100%;
+    height: 100%;
+}
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid #ff5733;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+.loader:before{
+  animation-delay: .5s;
+}
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
 </style>
 
   <body>
+
+  
+
+<div class="loader_bg">
+    <div class="loader"></div>
+    </div> 
+
   <div class="navbar">
             <div class="icon">
                 <h2 class="logo">SELAPH</h2>
@@ -608,11 +666,21 @@ ul li a:hover{
             
               <span>Message</span>
             </div>
-            <input   style="background-color: orange" type="submit" value="Send" class="btn" />
+            <input   style="background-color: orange"  href="#" value="Send" class="btn" />
           </form>
         </div>
       </div>
     </div>
+
+ <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+            setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
 
     <script src="app.js"></script>
   </body>

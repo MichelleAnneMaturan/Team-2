@@ -480,7 +480,7 @@ ul li a:hover{
 .search{
     width: 300px;
     float: left;
-    margin-left: 270px;
+    margin-left: 400px;
 }
 
 .srch{
@@ -507,8 +507,8 @@ ul li a:hover{
     margin-top: 13px;
     color:  white;
     font-size: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 7px;
+    border-bottom-right-radius: 7px;
     transition: 0.2s ease;
     cursor: pointer;
 }
@@ -654,12 +654,12 @@ ul li a:hover{
                     <li><a href="<?=base_url('Welcome/Front')?>">HOME</a></li>
                     <li><a href="<?=base_url('Welcome/About')?>">ABOUT</a></li>
                     <li><a href="<?=base_url('Welcome/Login')?>">SERVICE</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="<?=base_url('Welcome/Contact')?>">CONTACT</a></li>
                 </ul>
             </div>
 
             <div class="search">
-                <input class="srch" type="search" name="" placeholder="Type To text">
+                <input class="srch" type="search" name="" >
                 <a href="#"> <button class="btn2">Search</button></a>
             </div>
 

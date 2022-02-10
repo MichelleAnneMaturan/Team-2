@@ -27,12 +27,6 @@ header {
     min-width: 1600%;
 }
 
-.nav-area {
-    background: rgba(0,0,0,0.7);
-    height: 60px;
-    position: absolute;
-    width: 100%;
-}
 
 .logo{
     margin: 0 50px;
@@ -220,7 +214,7 @@ ul li a:hover{
 .search{
     width: 330px;
     float: left;
-    margin-left: 270px;
+    margin-left: 400px;
 }
 
 .srch{
@@ -235,8 +229,10 @@ ul li a:hover{
     font-size: 16px;
     float: left;
     padding: 10px;
+    
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
+    
 }
 
 .btn{
@@ -741,7 +737,7 @@ html {
             </div>
 
             <div class="search">
-                <input class="srch" type="search" name="" placeholder="Type To text">
+                <input class="srch" type="search" name="" >
                 <a href="#"> <button class="btn">Search</button></a>
             </div>
 

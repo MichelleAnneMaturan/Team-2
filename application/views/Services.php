@@ -13,8 +13,6 @@
 	<link href="style.css" rel="stylesheet">
 
 <style>
-
-
 *{
     margin: 0;
     padding: 0;
@@ -37,15 +35,21 @@
     color: #F78206  ;
     font-size: 35px;
     font-family: Arial;
-    padding-left: 20px;
+    padding-left: 50px;
+    text-transform: capitalize;
+    font-weight: bold;
     float: left;
     padding-top: 10px;
     margin-top: 5px
 }
+
+
+
 .menu{
     width: 400px;
     float: left;
     height: 70px;
+   padding-left: -100px;
     
 }
 
@@ -78,7 +82,8 @@ ul li a:hover{
 .search{
     width: 300px;
     float: left;
-    margin-left: 270px;
+    margin-left:400px;
+   
 }
 
 .srch{
@@ -87,10 +92,11 @@ ul li a:hover{
     height: 40px;
     background: transparent;
     border: 1px solid  #F78206  ;
-    margin-top: 13px;
+  
     color: #fff;
     border-right: none;
     font-size: 16px;
+    margin-top: 0px;
     float: left;
     padding: 10px;
     border-bottom-left-radius: 5px;
@@ -100,10 +106,12 @@ ul li a:hover{
 .btn{
     width: 100px;
     height: 40px;
-    background: white  ;
+    background:  #F78206  ;
+    
+   
     border: 2px solid  #F78206  ;
-    margin-top: 13px;
-    color: #F78206;
+    margin-top: 0px;
+    color:white;
     font-size: 15px;
     border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -122,58 +130,6 @@ ul li a:hover{
     outline: none;
 }
 
-.content{
-    width: 1200px;
-    height: auto;
-    margin: auto;
-    color: #fff;
-    position: relative;
-}
-
-.content .par{
-    padding-left: 20px;
-    padding-bottom: 25px;
-    font-family: Arial;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-}
-
-.content h1{
-    font-family: 'Times New Roman';
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
-}
-
-.content .cn{
-    width: 160px;
-    height: 40px;
-    background:    #F78206  ;
-    border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4s ease;
-    
-}
-
-.content .cn a{
-    text-decoration: none;
-    color: #000;
-    transition: .3s ease;
-}
-
-.cn:hover{
-    background-color: #fff;
-}
-
-.content span{
-    color:   #F78206  ;
-    font-size: 65px
-}
 
 .form{
     width: 300px;
@@ -786,6 +742,127 @@ html {
 }
 
 
+/*FOOTER */
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+
+    border-radius: 50%;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px;
+padding-bottom: 50px;
+    text-align: center;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+
+/*scroll page*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+#section2 {
+    
+   align-items: center;
+   justify-content: center;
+    height: 100%;
+}
+
+
+
+
    </style>
 </head>
 <header>
@@ -806,7 +883,7 @@ html {
             <div class="menu">
                 <ul>
                     <li><a href="<?=base_url('Welcome/Home')?>">HOME</a></li>
-                    <li><a href="<?=base_url('Welcome/Front#section2')?>">ABOUT</a></li>
+                    <li><a href="<?=base_url('Welcome/Home#section2')?>">ABOUT</a></li>
                     <li><a href="<?=base_url('Welcome/Services')?>">SERVICE</a></li>
                     <li><a href="<?=base_url('Welcome/Contactlog')?>">CONTACT</a></li>
                     <li><a href="<?=base_url('Welcome/Front')?>">Logout</a></li>
@@ -839,7 +916,7 @@ html {
 					<h5 class="animated zoomIn" style="animation-delay: 1s; color:  #F78206; font-family: rockwell;">Kaisahang Buhay Foundation Inc.</h5>
 					<p class="animated fadeInLeft" style="animation-delay: 2s">KBFs Day Care Service establishes and operates day care centers in disadvantaged communities as a venue for children to develop their psycho-social, intellectual, physical and emotional functioning based on accepted child development concepts.</p>
 					<p class="animated zoomIn" style="animation-delay: 3s; "><a href="#section1" >Schedule a Visit</a></p>
-                    <p class="animated zoomIn" style="animation-delay: 3s"><a href="https://cms.org.ph/"  target="_blank">Visit Our Page for more info</a></p>
+                    <p class="animated zoomIn" style="animation-delay: 3s"><a href="https://www.kbf.ph/"  target="_blank">Visit Our Page for more info</a></p>
 				</div>
 			</div>
 			<div class="carousel-item ">
@@ -968,7 +1045,36 @@ html {
   <?php }?>
              
 </form>
+
+
 </body>
     </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Selaph@gmail.com</p>
+            <p>(02) 8722-0650 / (02) 8527-8385</p>
+            <ul class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy; <a href="#">SELAPH </a>  </p>
+                    <div class="footer-menu">
+                      <ul class="f-menu">
+                        <li><a href="<?=base_url('Welcome/Home')?>">Home</a></li>
+                        <li><a href="<?=base_url('Welcome/Home#section2')?>">About</a></li>
+                        <li><a href="<?=base_url('Welcome/Services')?>">Service</a></li>
+                        <li><a href="<?=base_url('Welcome/Contactlog')?>">Contact</a></li>
+                      </ul>
+                    </div>
+        </div>
+
+    </footer>
 
 </html>
